@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change text</title>
+</head>
+<body>
+  <div id="divText">Hello HTML5</div>
+  <input type="hidden" id="hiddenText" value="0">
+  <button onclick="getText()">Change Text</button>
+  <script>
+  function getText(){
+    var hiddenText = document.getElementById("hiddenText").value;
+    if(hiddenText == 0){
+      document.getElementById("divText").innerHTML = "Hello JavaScript";
+      document.getElementById("hiddenText").value = 1;
+    }
+    else{
+      document.getElementById("divText").innerHTML = "Hello HTML5";
+      document.getElementById("hiddenText").value = 0;
+    }
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light on off</title>
+</head>
+<body>
+  <img src="img/pic_bulboff.gif" alt="" id="myImage" style="width: 30px;"><br><br>
+  <input type="hidden" id="hiddenText" value="0">
+  <button onclick="getText()" id="divText">Click to On</button>
+  <script>
+  function getText(){
+    var hiddenText = document.getElementById("hiddenText").value;
+    if(hiddenText == 0){
+      document.getElementById('myImage').src="img/pic_bulbon.gif";
+      document.getElementById("divText").innerHTML = "Click to Off";
+      document.getElementById("hiddenText").value = 1;
+    }
+    else{
+      document.getElementById('myImage').src="img/pic_bulboff.gif";
+      document.getElementById("divText").innerHTML = "Click to On";
+      document.getElementById("hiddenText").value = 0;
+    }
+  }
+  </script>
+</body>
+</html>
