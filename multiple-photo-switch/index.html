@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Multiple Photo</title>
+  <style>
+    button {
+      background-color: yellow;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <img src="0.jpg" alt="" id="myImage" style="width: 800px; height: 500px;"><br><br>
+    <button onclick="changePhoto('1')" style="cursor: pointer;">Chhota Bheem</button>
+    <button onclick="changePhoto('2')" style="cursor: pointer;">Motu Patlu</button>
+    <button onclick="changePhoto('3')" style="cursor: pointer;">Tom and Jerry</button>
+  </div>
+  <script>
+    function changePhoto(photoType){
+      if(photoType==1){
+        document.getElementById('myImage').src="1.jpg";
+      }
+      else if(photoType==2){
+        document.getElementById('myImage').src="2.jpg";
+      }
+      else if(photoType==3){
+        document.getElementById('myImage').src="3.jpg";
+      }
+    }
+  </script>
+</body>
+</html>
