@@ -1,0 +1,2 @@
+I_bought= cost_of_12_bottles_of_mango_juice + cost_of_5_packets_of_sandwitch + cost_of_2_paper_plates
+print(subtotal_o

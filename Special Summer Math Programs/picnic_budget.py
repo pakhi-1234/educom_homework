@@ -1,0 +1,21 @@
+cost_of_per_bottle_of_mango_juice= 35
+how_many_bottle_of_mango_juice_I_have_to_buy= 12
+cost_of_12_bottles_of_mango_juice= 12*35
+print("Cost of 12 bottles of mango juice = ₹",cost_of_12_bottles_of_mango_juice)
+cost_of_per_packet_of_sandwitch= 120
+how_many_packet_of_sandwitch_I_have_to_buy= 5
+cost_of_5_packets_of_sandwitch= 5*120
+print("Cost of 5 packets of sandwitch = ₹",cost_of_5_packets_of_sandwitch)
+cost_of_per_pack_paper_plate= 60
+how_many_pack_of_paper_plate_I_have_to_buy= 2
+cost_of_2_packs_of_paper_plate= 2*60
+print("Cost of 2 packs of paper plate = ₹",cost_of_2_packs_of_paper_plate)
+subtotal_of_all_I_bought= cost_of_12_bottles_of_mango_juice + cost_of_5_packets_of_sandwitch + cost_of_2_packs_of_paper_plate
+print("Total money needed to buy the three things = ₹",subtotal_of_all_I_bought)
+discount= 100
+print("Discount of ₹",discount)
+therefore_money_I_have_to_pay= subtotal_of_all_I_bought - 100
+print("Money I have to pay as per the discount = ₹",therefore_money_I_have_to_pay)
+number_of_total_student= 10
+the_final_amount_each_student_must_pay= therefore_money_I_have_to_pay / 10
+print("Money each of the 10 students paid = ₹",int(the_final_amount_each_student_must_pay))
